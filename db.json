@@ -1,0 +1,40 @@
+{
+  "bikes": [
+    {
+      "id": "1",
+      "name": "kawaski ninjah",
+      "cc": "1000",
+      "speed": "400km/hr",
+      "poster": "kawasaki.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "kawaski ninjah h2r",
+      "cc": "1400",
+      "speed": "400km/hr",
+      "poster": "kawasaki ninja h2r.jpeg"
+    
+    },
+    {
+      "id": "3",
+      "name": "Ducati",
+      "cc": "1000",
+      "speed": "400km/hr",
+      "poster": "ducati.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Yamaha r6",
+      "cc": "1000",
+      "speed": "400km/hr",
+      "poster": "yamahar6.jpeg"
+    },
+    {
+      "id": "5",
+      "name": "suzuki hayabusa",
+      "cc": "1000",
+      "speed": "400km/hr",
+      "poster": "bike.jpeg"
+    }
+  ]
+}
