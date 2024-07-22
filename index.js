@@ -9,11 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to play bike sound
   function playBikeSound() {
-  
     const audio = new Audio("wasaki.mp3");
-    
+
     audio.play();
-    
   }
 
   function showBike(index) {
