@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM fully loaded and parsed");
   let currentIndex = 0;
   let bikesData = []; // To store fetched bike data
 
@@ -82,3 +83,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // Fetch bikes data when the page loads
   fetchBikes();
 });
+// server.js
+const express = require('express');
+const app = express();
+const path = require('path');
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, '../public')));
+
+// Define a route to serve the index.html file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public', 'index.html'));
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
