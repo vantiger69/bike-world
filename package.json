@@ -1,12 +1,5 @@
 {
-  "name": "bike-world",
-  "version": "1.0.0",
-  "description": "A bike display application",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
-    "express": "^4.17.1"
+    "json-server": "^0.17.0"
   }
 }
