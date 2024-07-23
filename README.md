@@ -35,6 +35,6 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 # Deployment:
-Project deployed link=> https://bike-world-7.onrender.com
+Project deployed link=> https://bike-world-10.onrender.com
 Demo link=> https://drive.google.com/file/d/1gbYSYTbFwOdVTMLvu8smQQHOLtjl-SFz/view?usp=drive_link
 
