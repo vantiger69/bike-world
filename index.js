@@ -83,21 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Fetch bikes data when the page loads
   fetchBikes();
 });
-// server.js
-const express = require('express');
-const app = express();
-const path = require('path');
+const jsonServer = require("json-server");
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, '../public')));
+server.use(middlewares);
+server.use(router);
 
-// Define a route to serve the index.html file
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'index.html'));
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
+  console.log(`JSON Server is running on port ${port}`);
 });
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
-
